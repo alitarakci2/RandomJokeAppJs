@@ -4,3 +4,5 @@
 
  const resim = new UnslashApi;
  resim.randomResimGetir();
+
+ const ekran = new Ekran;

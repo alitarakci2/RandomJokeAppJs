@@ -19,10 +19,11 @@ class UnslashApi{
         try {
             const resimResponse = await this.axiosNesne.get('/photos/random');
             console.log(resimResponse.data[0].urls.regular);
-            //return sakaResponse.data.value;
+            return resimResponse.data[0].urls.regular;
             
         } catch (err) {
-            console.log(err);
+            console.log(err.response);
+            return 'https://www.online-tech-tips.com/wp-content/uploads/2021/06/http-403.jpeg';
         }
 
     }
